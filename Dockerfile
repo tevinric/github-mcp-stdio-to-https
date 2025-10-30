@@ -1,6 +1,6 @@
 
 #Stage 1: Build MCP binary with correct Go version
-FROM golang:1.24-alpine AS builder
+FROM golang:1.25-alpine AS builder
 
 # Install git and build tools
 RUN apk add --no-cache git
