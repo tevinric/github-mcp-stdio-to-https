@@ -15,7 +15,7 @@ COPY . .
 RUN go build -o /mcp-server ./cmd/github-mcp-server
 
 # Stage 2: Python wrapper for HTTP
-FROM python:3.10-slim
+FROM python:3.12-slim
 
 # Install FastAPI and Uvicorn
 RUN pip install fastapi uvicorn
